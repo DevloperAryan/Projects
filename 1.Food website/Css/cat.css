@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #faf9f9;
+}
+
+
+/* Navigation */
+nav {
+    background-color: #1c1a1a;
+    padding: 30px;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin: 0px 5px 0px 65px;
+}
+
+.nav-links a:hover {
+    color: #ccc;
+}
+
+/* Header */
+header {
+    color: #110c0c;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    text-decoration-color: #110c0c;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #110c0c;
+}
+
+/* Category Section */
+.category-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.category-card {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0px 20px 0px 20px;
+    transition: transform 0.3s ease;
+}
+
+.category-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    border-color: #fff;
+}
+
+.category-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.category-icon {
+    width: 150px;
+    height: auto;
+    margin: 0 20px;
+    border-radius: 8px;
+}
+
+.category-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+
+.category-card p {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .category-card, .category-card.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .category-icon {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
