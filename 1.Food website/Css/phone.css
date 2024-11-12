@@ -32,12 +32,16 @@
         padding: 10px 10px;
 }
 
-#home::before {
-    /* height: 470px; */
-}
+/* #home::before {
+    height: 470px;
+} */
 
 #home p {
     font-size: 15px;
+}
+
+#leaf-2{
+    z-index: -1;
 }
 
 

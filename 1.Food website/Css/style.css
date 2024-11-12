@@ -80,17 +80,12 @@
     background: url(../img/webBG.png) no-repeat center center / cover;
     position: absolute;
     top: 0px;
-    left: -10px;
+    left: 0px;
     height: 100%;
-    width: 101%;
+    width: 100%;
     z-index: -1;
 }
-.homeDiv1{
-    /* flex: 65%; */
-}
-.homeDiv2{
-    /* width: 320px; */
-}
+
 #home h1 {
     color: rgb(0, 0, 0);
     text-align: left;
@@ -129,38 +124,17 @@
 .leaves{
     width: 500px;
     position: absolute;
-    animation: dance 8s infinite linear;
 }
-/* @keyframes dance {
-    0%{
-        transform: translate3d(0px 0px 0px);
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: translate3d(2px 20px 0px);
-        transform: rotate(3deg);
-    }
-    50%{
-        transform: translate3d(5px 40px 0px);
-        transform: rotate(10deg);
-    }
-    75%{
-        transform: translate3d(2px 20px 0px);
-        transform: rotate(3deg);
-    }
-    100%{
-        transform: translate3d(0px 0px 0px);
-        transform: rotate(0deg);
-    }
-} */
+
 #leaf-1{
-    top: 5vh;
-    left: 3vw;
+    top: 3vh;
+    left: -4vw;
     width: 250px;
+    z-index: -1;
 }
 #leaf-2{
     bottom: 0px;
-    right: 7px;
+    right: 13px;
     transform: rotate(352deg);
     width: 300px;
 }
@@ -183,7 +157,6 @@
 }
 
 #services .box {
-    border: 2px solid black;
     padding: 22px;
     margin: 10px;
     border-radius: 30px;

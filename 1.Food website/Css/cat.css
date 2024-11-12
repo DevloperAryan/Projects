@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -12,31 +13,60 @@ body {
 
 
 /* Navigation */
-nav {
-    background-color: #1c1a1a;
-    padding: 30px;
-    text-align: center;
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
 }
 
-.nav-links {
+#navbar::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.666);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+/* Navbar image & logo} */
+#logo {
+    margin: 11px 25px;
+}
+
+#logo img {
+    margin: 6px 13px;
+    height: 28px;
+    scale: 1.9;
+}
+
+/* List styling} */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai 2', sans-serif;
+}
+
+#navbar ul li {
     list-style: none;
+    font-size: 1.3rem;
 }
 
-.nav-links li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: #fff;
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 4px 25px;
+    border-radius: 18px;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    margin: 0px 5px 0px 65px;
 }
 
-.nav-links a:hover {
-    color: #ccc;
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
 }
 
 /* Header */
