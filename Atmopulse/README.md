@@ -23,7 +23,7 @@
 
 > Looks great on **all screen sizes** — mobile 📱, tablet 💻, and desktop 🖥️!
 
-![Responsive Demo](./assets/Mobile.png.png)
+![Responsive Demo](./assets/Mobile.png)
 
 ---
 
