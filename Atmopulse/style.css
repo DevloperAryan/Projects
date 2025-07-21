@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Roboto+Slab:wght@100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --bg1: radial-gradient(circle, #f5f7f9, #d2e0f4, #b5c8ee, #9faee7, #9193dd);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle, #9c9add, #b6b2e6, #cfcbee, #e7e5f7, #ffffff);
+}
+
+body img {
+    user-select: none;
+}
+
+.container {
+    background: #c3c0e2;
+    height: 90vh;
+    min-height: 43em;
+    width: 42em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0px 0px 16px 1px #6a6a6a;
+}
+
+.input,
+.input2 {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.input #areaInput1,
+.input2 #areaInput2 {
+    width: 56%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    caret-color: rgb(81, 9, 189);
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    padding-left: 15px;
+    user-select: none;
+
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.iconStyle,
+.defaultIcon {
+    width: 50px;
+    background: #000000;
+    height: 100%;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+    padding: 10px;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+.defaultIcon {
+    background: #ffffff;
+}
+
+#defaultIcon {
+    animation: rotation 6s linear infinite;
+    width: 30px;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.cityName,
+.hStyle {
+    text-align: center;
+    font-size: 40px;
+    margin: 10px 0px;
+    color: #424242;
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.location {
+    padding: 10px 20px;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.location img {
+    vertical-align: middle;
+    width: 1.4em;
+    height: 1.4em;
+    margin-right: 0.4em;
+}
+
+.mainData {
+    display: flex;
+    height: 25%;
+    justify-content: space-between;
+    padding: 0px 2rem;
+    align-items: center;
+    gap: 1rem;
+
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dataCondn {
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+}
+
+.temprature {
+    font-size: 2rem;
+}
+
+.logo {
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.logo img {
+    width: 100px;
+}
+
+.otherData {
+    padding: 10px 30px;
+    width: 100%;
+    margin-top: 11px;
+    font-size: 1.2em;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skyCondition {
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: blueviolet;
+}
+
+.moreInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2px;
+    width: 90%;
+    height: 95%;
+    column-gap: 40px;
+    row-gap: 10px;
+    align-content: center;
+}
+
+.infoBox {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.infoBox img {
+    width: 45px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.infoTag {
+    color: rgb(102, 102, 102);
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.info {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+#defaultContainer {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    background: #c3c0e2;
+    height: 70px;
+    width: 74px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 16px 1px #6a6a6a;
+    overflow: hidden;
+    transform: scale(0.3) translate(-50%, -50%);
+    transition:
+        opacity 0.1s ease,
+        transform 0.2s cubic-bezier(.4, 0, .2, 1),
+        height 0.3s cubic-bezier(.4, 0, .2, 1),
+        width 0.3s cubic-bezier(.4, 0, .2, 1);
+    z-index: 10;
+}
+
+#defaultContainer.appear {
+    opacity: 1;
+    pointer-events: all;
+    top: 50vh;
+    left: 50vw;
+    min-height: 43em;
+    height: 90vh;
+    width: 42em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0px 0px 16px 1px #6a6a6a;
+    padding-top: 5rem;
+    overflow: auto;
+    transform: scale(1) translate(-50%, -50%);
+}
+
+#cancelIcon {
+    height: 50px;
+    filter: invert(1);
+    background: white;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.4rem;
+}
+
+.impNote {
+    margin-top: 10%;
+    padding: 0 40px;
+    text-align: justify;
+
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+@media (max-width: 850px) {
+    .container {
+        height: 95vh;
+        width: 80vw;
+        overflow: hidden;
+    }
+
+    #defaultContainer.appear {
+        height: 95vh;
+        width: 80vw;
+        overflow: hidden;
+    }
+
+    .input {
+        margin: 20px 0px;
+        padding: 0px 10px;
+    }
+
+    .location {
+        height: 10%;
+    }
+
+    .mainData {
+        height: 15%;
+        padding: 0px 2rem;
+    }
+
+    .moreInfo {
+        height: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        height: 99vh;
+        width: 97vw;
+        overflow: hidden;
+    }
+
+    #defaultContainer.appear {
+        height: 99vh;
+        width: 97vw;
+        overflow: hidden;
+    }
+
+    .input {
+        margin: 33px 0px 20px 0px;
+    }
+
+    .location {
+        height: 12%;
+    }
+
+    .mainData {
+        height: 22%;
+        padding: 0px 1.5rem;
+    }
+
+    .otherData {
+        padding: 10px 15px;
+    }
+
+    .moreInfo {
+        height: 90%;
+    }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+
+    .container,
+    #defaultContainer.appear {
+        margin: 5px 0px;
+    }
+}

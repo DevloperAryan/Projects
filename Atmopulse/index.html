@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forcast App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input">
+            <div class="defaultIcon iconStyle">
+                <img id="defaultIcon" src="assets/gear.png" alt="Default Location">
+            </div>
+            <input id="areaInput1" class="areaInput" type="text" placeholder="Enter city">
+            <img id="searchIcon" class="iconStyle" src="assets/searchIcon.svg" alt="Search" onclick="handleSearch()">
+        </div>
+        <h2 class="cityName">Enter location</h2>
+        <div class="location">
+            <div class="locName"><img src="assets/loc-Icon.svg" alt="Location">No Location Yet</div>
+            <div class="date"><img src="assets/calender.svg" alt="Date">DD MM YYYY, Day</div>
+        </div>
+        <div class="mainData">
+            <div class="dataCodtn">
+
+                <div class="temprature">00°C | 00°F</div>
+                <h2 class="skyCondition">No Data</h2>
+            </div>
+            <div class="logo"><img
+                    src="https://www.iconarchive.com/download/i138198/microsoft/fluentui-emoji-3d/Sun-Behind-Small-Cloud-3d.1024.png"
+                    alt="weather Icon"></div>
+        </div>
+
+        <div class="otherData">
+            <div class="moreInfo">
+                <div id="feelsLike" class="infoBox">
+                    <img src="assets/thermometer2.png" alt="Feels Like">
+                    <div class="infoTag">feels Like</div>
+                    <div class="info">0℃</div>
+                </div>
+                <div id="aqi" class="infoBox">
+                    <img src="assets/fog2.png" alt="Air quality">
+                    <div class="infoTag">AQI</div>
+                    <div class="info"> Null</div>
+                </div>
+                <div id="wind" class="infoBox">
+                    <img src="assets/windSpeed.png" alt="Wind speed">
+                    <div class="infoTag">Wind</div>
+                    <div class="info">0 km/h </div>
+                </div>
+                <div id="humidity" class="infoBox">
+                    <img src="assets/waterDroplets.png" alt="humidity">
+                    <div class="infoTag">humidity</div>
+                    <div class="info">0% </div>
+                </div>
+                <div id="visiblity" class="infoBox">
+                    <img src="assets/view.png" alt="visiblity">
+                    <div class="infoTag">visiblity</div>
+                    <div class="info"> 0km </div>
+                </div>
+                <div id="uv" class="infoBox">
+                    <img src="assets/uv.png" alt="rain">
+                    <div class="infoTag">UV</div>
+                    <div class="info"> null </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="defaultContainer">
+        <img id="cancelIcon" class="iconStyle" src="assets/cancel.png" alt="Cancel">
+        <h2 class="hStyle" style="user-select: none;">Enter default Location</h2>
+        <div class="input2">
+            <input id="areaInput2" class="areaInput" type="text" placeholder="Enter city">
+            <img id="searchIcon2" class="iconStyle" src="assets/searchIcon.svg" alt="Search"
+                onclick="handleSearch('areaInput2')">
+        </div>
+
+        <h2 class="defaultLoc hStyle" style="color: blueviolet;">Location : Not set</h2>
+        <h3 class="impNote"><strong style="color: rgb(221, 21, 21);">*Note:-</strong>The location you will choose as
+            default it will stay saved on your browser, and display the data whenever you will open this WebApp. you can
+            change the Default Location whenever you want.</h3>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
