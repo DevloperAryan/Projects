@@ -39,7 +39,7 @@
 
 ## 🌍 Live Preview
 
-🔗 [Live Demo (optional if hosted)](https://atmopulse.netlify.app)
+🔗 [Live Demo (AtmoPulse)](https://atmopulse.netlify.app)
 
 ---
 
